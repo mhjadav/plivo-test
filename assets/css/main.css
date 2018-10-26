@@ -1,0 +1,129 @@
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #1e1465;
+}
+
+.dropdown-item {
+    color: #1e1465;
+}
+
+.btn-login {
+    width: 100px;
+    color: #1e1465;
+}
+
+.btn-signup {
+    width: 100px;
+    color: #1e1465;
+    border-color: #1e1465;
+}
+
+.card-text {
+    color: #1e1465;
+    margin-top: 7%;
+}
+
+header>.card {
+    border: 0;
+}
+
+.card-img {
+    min-height: 20vh;
+}
+
+.search-box {
+    padding: 0 10vw;
+    margin-top: -25px;
+}
+
+.search-box input {
+    border-radius: 0;
+    border-left: none;
+    box-shadow: 5px 5px 5px #efefef99;
+}
+
+.search-icon {
+    background: white;
+    border-radius: 0;
+    box-shadow: 5px 5px 5px #efefef99;
+}
+
+.content {
+    margin-top: 10vh;
+}
+
+.content .card {
+    margin: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px #efefef, -5px -5px 10px #efefef;
+}
+
+.content .card .card-text .alert-link {
+    color: #6CC16F;
+}
+
+.content .card-text {
+    color: #000;
+}
+
+.cotent-header {
+    padding: 10px;
+    color: #1e1465;
+}
+
+.navbar-nav-svg {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: text-top;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 10vw;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+footer {
+    background: #F7F9FB;
+}
+
+footer h6 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+    .card-group>.card+.card {
+        margin-left: 10px;
+        border-left: 1px solid rgba(0, 0, 0, .125);
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_Phone Numbers Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Docs-home-Copy" transform="translate(-960.000000, -537.000000)">
+            <g id="1" transform="translate(164.000000, 418.000000)">
+                <g id="Phone-numbers" transform="translate(756.000000, 75.000000)">
+                    <g id="ic_Phone-Numbers-Copy" transform="translate(40.000000, 44.000000)">
+                        <path d="M9.07509836,9.07509836 C21.1752295,-3.02503279 40.7930164,-3.02503279 52.8931475,9.07509836 C64.9932787,21.1752295 64.9932787,40.7930164 52.8931475,52.8921148 C40.7930164,64.9922459 21.1752295,64.9922459 9.07509836,52.8921148 C-3.02503279,40.7930164 -3.02503279,21.1752295 9.07509836,9.07509836" id="Fill-1" fill="#EAF9EA"></path>
+                        <g id="Group-5" transform="translate(15.000000, 15.000000)">
+                            <polygon id="Fill-1" fill="#ABEAAE" points="0 12.3154526 30.7115789 12.3154526 30.7115789 7.86745263 0 7.86745263"></polygon>
+                            <polygon id="Fill-2" fill="#ABEAAE" points="0 22.8468211 30.7115789 22.8468211 30.7115789 18.3971368 0 18.3971368"></polygon>
+                            <polygon id="Fill-3" fill="#6CC16F" points="18.3966316 30.7120842 22.8463158 30.7120842 22.8463158 0.000505263158 18.3966316 0.000505263158"></polygon>
+                            <polygon id="Fill-4" fill="#6CC16F" points="7.86526316 30.7120842 12.3132632 30.7120842 12.3132632 0.000505263158 7.86526316 0.000505263158"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
