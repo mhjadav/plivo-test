@@ -12,67 +12,70 @@
 </head>
 
 <body>
-    <div class="container p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 3</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Link 4
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Child Link 1</a>
-                            <a class="dropdown-item" href="#">Child Link 2</a>
-                            <a class="dropdown-item" href="#">Child Link 3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 5</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a class="btn btn-sm btn-login d-lg-inline-block mb-3 mb-md-0 ml-md-3 w-40" href="#">Log In</a>
-                    <a class="btn btn-sm btn-signup btn-outline-success d-lg-inline-block mb-3 mb-md-0 ml-md-3 w-45"
-                        href="#">Sign Up</a>
-                </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 pr-5">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Link 4
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Child Link 1</a>
+                        <a class="dropdown-item" href="#">Child Link 2</a>
+                        <a class="dropdown-item" href="#">Child Link 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 5</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 d-flex flex-column flex-md-row align-items-start">
+                <a class="btn btn-sm btn-login d-lg-inline-block mb-3 mb-md-0 ml-md-3 w-40  text-left text-md-center"
+                    href="#">Log In</a>
+                <a class="btn btn-sm btn-signup btn-outline-success d-lg-inline-block mb-3 mb-md-0 ml-md-3 w-45" href="#">Sign
+                    Up</a>
+            </form>
+        </div>
+    </nav>
+    <header>
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./assets/images/bg.png" alt="Card image">
+            <div class="card-img-overlay">
+                <p class="card-text text-center h3">H1 Copy for devolopers</p>
             </div>
-        </nav>
-        <header>
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="./assets/images/bg.png" alt="Card image">
-                <div class="card-img-overlay">
-                    <p class="card-text text-center h3">H1 Copy for devolopers</p>
-                </div>
-            </div>
+        </div>
+        <div class="container">
             <form>
                 <div class="input-group mb-3 search-box">
                     <div class="input-group-prepend">
                         <span class="input-group-text search-icon">
-                            <img src="assets/images/ic_search.svg" />
+                            <img src="./assets/images/ic_search.svg" />
                         </span>
                     </div>
                     <input id="document-search" type="text" class="form-control p-4" placeholder="Search documentation"
                         aria-label="Search documentation" aria-describedby="button-addon2" />
                 </div>
             </form>
-        </header>
+        </div>
+    </header>
+    <div class="container p-0">
         <section class="content">
             <div class="cotent-header">
                 <h3>
@@ -315,11 +318,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md d-flex align-items-center">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
                     <small class="d-block text-muted">Copyright © 2018 Plivo Inc</small>
                 </div>
-                <div class="col-6 col-md text-right">
-                    <ul class="navbar-nav flex-row ml-md-auto d-md-flex justify-content-end">
+                <div class="col-12 col-md-6 text-right">
+                    <ul class="navbar-nav flex-row ml-md-auto d-md-flex justify-content-md-end justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener"
                                 aria-label="Twitter">

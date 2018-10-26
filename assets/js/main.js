@@ -1,3 +1,8 @@
+
+$('.navbar-toggler').click((event) => {
+  $(event.currentTarget).find('.navbar-toggler-icon').toggleClass('toggler-close-icon');
+});
+
 function autocomplete(inp, arr) {
   let currentFocus;
 
