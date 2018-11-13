@@ -9,6 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    <style>
+            .algolia-autocomplete {
+              width: 100%;
+            }
+            .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+              width: 100%;
+            }
+            .algolia-autocomplete .aa-hint {
+              color: #999;
+            }
+            .algolia-autocomplete .aa-dropdown-menu {
+              width: 100%;
+              background-color: #fff;
+              border: 1px solid #999;
+              border-top: none;
+            }
+            .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+              cursor: pointer;
+              padding: 5px 4px;
+            }
+            .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+              background-color: #B2D7FF;
+            }
+            .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+              font-weight: bold;
+              font-style: normal;
+            }
+          </style>
 </head>
 
 <body>
@@ -64,12 +92,7 @@
         <div class="container">
             <form>
                 <div class="input-group mb-3 search-box">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text search-icon">
-                            <img src="./assets/images/ic_search.svg" />
-                        </span>
-                    </div>
-                    <input id="document-search" type="text" class="form-control p-4" placeholder="Search documentation"
+                    <input id="search-input" class="form-control p-4" name="contacts" type="text" placeholder='Search by name'
                         aria-label="Search documentation" aria-describedby="button-addon2" />
                 </div>
             </form>
@@ -358,6 +381,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
         var documentList = [
@@ -369,7 +395,36 @@
         ];
 
         /*Autocomplete code i have copied from different source*/
-        autocomplete(document.getElementById("document-search"), documentList);
+        //autocomplete(document.getElementById("document-search"), documentList);
+        var client = algoliasearch('XYT0SPQLUP', '............................');
+        var index = client.initIndex('contacts');
+       
+        index.setSettings({
+            'customRanking': ['desc(followers)'],
+            'searchableAttributes': [
+                'lastname',
+                'firstname',
+                'company',
+                'email',
+                'city',
+                'address'
+            ]
+        }, function(err, content) {
+            console.log(content);
+        });
+        autocomplete('#search-input', { hint: false }, [
+            {
+            source: autocomplete.sources.hits(index, { hitsPerPage: 5 }),
+            displayKey: 'firstname',
+            templates: {
+                suggestion: function(suggestion) {
+                return suggestion._highlightResult.firstname.value;
+                }
+            }
+            }
+        ]).on('autocomplete:selected', function(event, suggestion, dataset) {
+            console.log(suggestion, dataset);
+        });
     </script>
 
 </body>

@@ -39,11 +39,11 @@ header>.card {
     margin-top: -25px;
 }
 
-.search-box input {
+/* .search-box input {
     border-radius: 0;
     border-left: none;
     box-shadow: 5px 5px 5px #efefef99;
-}
+} */
 
 .search-icon {
     background: white;
